@@ -13,20 +13,17 @@ VBoxClient --clipboard
 # Make NPM show us useful things
 npm config set spin=false
 npm config set loglevel=http
-#sudo -u vagrant -s npm config set spin=false
-#sudo -u vagrant -s npm config set loglevel=http
 
+# Install node dependencies
 npm install -g johnny-five nodebot-workshop node-inspector
 
 # allow anyone to start the desktop
 sed -i 's/allowed_users=console/allowed_users=anybody/g' /etc/X11/Xwrapper.config
 
-# Customise desktop
-#gsettings set org.gnome.desktop.background picture-uri file:///vagrant/images/desktop.jpg
-
 # remote old panel layout
 rm -rf /etc/xdg/xfce4/panel/default.xml
 
+# setup chromium and xfce4
 mkdir -p /home/vagrant/.config
 tar -xzf /vagrant/assets/chromium.tar.gz -C /home/vagrant/.config
 tar -xzf /vagrant/assets/xfce4.tar.gz -C /home/vagrant/.config
