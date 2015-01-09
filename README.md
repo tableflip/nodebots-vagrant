@@ -29,7 +29,7 @@ Some users of these operating systems are experts and don't need help, but for e
   ```sh
   $ vagrant ssh
   ...
-  vagrant@packer-virtualbox-iso:~$ startxfce4
+  vagrant@packer-virtualbox-iso:~$ startx
   ```
 
 When you wish to shut the VM down, log out from it and run:
@@ -46,7 +46,7 @@ Once you have installed Vagrant and started the VM you need to ensure that Virtu
 1. In VirtualBox, select `Machine` > `Settings` > `Ports` > `USB`
 1. Click the `Add filter` button with the small green + icon
 1. Select your Arduino from the list
-1. Disconnect and reconnect the Arduino
+1. Disconnect and reconnect the Arduino - you should see it appear in the VM at `/dev/ttyACM0` or similar
 
 ## Running Johnny-Five
 
