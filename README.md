@@ -11,12 +11,12 @@ Some users of these operating systems are experts and don't need help, but for e
 1. Clone this repo
 
   ```sh
-  $ git clone http://github.com/tableflip/nodebots-vagrant
+  $ git clone http://github.com/tableflip/nodebots-vm
   ```
 1. cd into the repo directory
 
   ```sh
-  $ cd nodebots-vagrant
+  $ cd nodebots-vm
   ```
 1. Connect to your image
 
