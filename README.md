@@ -58,3 +58,15 @@ Now that Vagrant, VirtualBox and your Arduino are set up:
 1. Ensure that the correct port is selected
 1. If it's the first time you've connected an Ardunio, select `Install Firmata`
 1. Enter your code and click `Run`
+
+## Troubleshooting
+
+If running `vagrant up` leaves you with an error message like:
+
+> The guest machine entered an invalid state while waiting for it
+> to boot. Valid states are 'starting, running'. The machine is in the
+> 'poweroff' state. Please verify everything is configured
+> properly and try again.
+
+Then double check that you installed the [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) for your platform.
+
